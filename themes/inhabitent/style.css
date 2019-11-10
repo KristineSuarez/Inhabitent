@@ -670,3 +670,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .site-content .content-area {
+    width: 75%; }
+  .site-content .widget-area {
+    width: 25%; }

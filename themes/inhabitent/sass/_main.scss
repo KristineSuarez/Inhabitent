@@ -1,0 +1,13 @@
+.site-content {
+    display: flex;
+    width: 100%;
+
+    .content-area {
+        width: 75%;
+    }
+
+    .widget-area {
+        width: 25%;
+    }
+
+}
