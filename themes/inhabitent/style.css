@@ -674,8 +674,30 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  min-width: 100%; }
+  .site-content .menu-main-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: right; }
   .site-content .content-area {
     width: 75%; }
-  .site-content .widget-area {
-    width: 25%; }
+
+.widget-area {
+  width: 25%; }
+
+.site-footer {
+  background: url(../../images/dark-wood.png); }
+  .site-footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.site-info {
+  text-align: center;
+  min-width: 100%; }

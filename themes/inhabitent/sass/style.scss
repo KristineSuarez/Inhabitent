@@ -63,4 +63,62 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-@import "main";
+
+.site-content {
+    display: flex;
+    min-width: 100%;
+
+    .menu-main-menu-container {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    // .main-navigation {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     text-align: right;
+    // }
+
+    .content-area {
+        width: 75%;
+    }
+
+    // .widget-area {
+    //     width: 25%;
+    // }
+
+}
+
+    // .main-navigation {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     text-align: right;
+    // }
+
+    // .content-area {
+    //     width: 75%;
+    // }
+
+    .widget-area {
+        width: 25%;
+    }
+
+
+
+
+.site-footer {
+    background: url(../../images/dark-wood.png);
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
+
+.site-info {
+    text-align: center;
+    min-width: 100%;
+}
