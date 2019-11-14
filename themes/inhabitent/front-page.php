@@ -22,7 +22,13 @@ get_header(); ?>
 	<?php
    		$args = array( 
 			   'post_type' => 'product', 
-			   'order' => 'ASC' );
+			   'post_per_page' => 3,
+			   'order' => 'ASC');
+			//    'tax_query' => array(
+			// 	array(
+			// 	   'taxonomy' => 'product-posts',
+			// 	   'field'    => 'slug',
+				//    'terms'    => 'bread',
    		$product_posts = get_posts( $args ); // returns an array of posts
 	?>
 	<?php 
