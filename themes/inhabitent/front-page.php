@@ -11,16 +11,31 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php the_post_thumbnail(); ?>
-
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php
+   		$args = array( 
+			   'post_type' => 'product', 
+			   'order' => 'ASC' );
+   		$product_posts = get_posts( $args ); // returns an array of posts
+	?>
+	<?php 
+		foreach ( $product_posts as $post ) : setup_postdata( $post ); 
+		the_title();
+		the_content();
+	?>
+	
+	<?php 
+
+   ?>
+<?php endforeach; wp_reset_postdata(); ?>
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

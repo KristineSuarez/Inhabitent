@@ -1,0 +1,45 @@
+.site-content {
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+    z-index: 99;
+
+    // .menu-main-menu-container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     text-align: right;
+    // }
+        .main-navigation {
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+    .content-area {
+        width: 75%;
+    }
+
+}
+    .widget-area {
+        width: 25%;
+    }
+
+    .f-banner {
+        position: relative;
+    }
+
+    .f-banner-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+     }
+
+     .about-header {
+         text-align: center;
+         color: white;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 50px;
+     }

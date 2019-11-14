@@ -41,8 +41,20 @@
 					</div>
 			</header><!-- #masthead -->
 
-			<!-- <div id="content" class="site-content">
-            <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"/>
-			</a> -->
-			
+<?php 
+	if(is_front_page()){
+		if(has_post_thumbnail()){?>
+			<div class="f-banner">
+				<?php the_post_thumbnail(); ?>
+				<img class="f-banner-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"/>
+			</div>
+			<?php		
+		}
+	}
+		if(is_page('About')){
+			if(has_post_thumbnail()){
+				the_post_thumbnail();
+				echo the_title("<h1 class='about-header'>","</h1>");	
+			}		
+		}
+?>

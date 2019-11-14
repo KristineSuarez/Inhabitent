@@ -670,12 +670,27 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: url(../../images/dark-wood.png); }
+  .site-footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.site-info {
+  text-align: center;
+  min-width: 100%; }
+
 .site-content {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%; }
-  .site-content .menu-main-menu-container {
+  min-width: 100%;
+  z-index: 99; }
+  .site-content .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,15 +704,22 @@ object {
 .widget-area {
   width: 25%; }
 
-.site-footer {
-  background: url(../../images/dark-wood.png); }
-  .site-footer .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+.f-banner {
+  position: relative; }
 
-.site-info {
+.f-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.about-header {
   text-align: center;
-  min-width: 100%; }
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 50px; }
