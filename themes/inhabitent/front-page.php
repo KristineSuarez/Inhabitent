@@ -17,9 +17,8 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		
-
 	<section class="product-info container">
-            <h2>Shop Stuff</h2>
+            <h2>SHOP STUFF</h2>
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product_type',
@@ -50,15 +49,30 @@ get_header(); ?>
 	?>
 
 	<section class="f-journals">
-	<?php 
-		foreach ( $product_posts as $post ) : setup_postdata( $post ); 
-		echo "<div class='f-journal'>";
-			the_post_thumbnail('large');
-			the_title();
-			comments_number();
-		echo "</div>";
-		
-		endforeach; wp_reset_postdata();  ?>
+		<div class="f-journals-container">
+			<h2>INHABITENT JOURNAL</h2>
+			<?php 
+				foreach ( $product_posts as $post ) : setup_postdata ( $post ); 
+			?>
+
+			<div class="f-journal">
+				<?php 
+					the_post_thumbnail ('large');
+					the_title ();
+					comments_number();
+				?>
+				<p>
+					<?php echo $post->title; ?>
+				</p>
+				<p>
+					<a href="<?php echo get_term_link ( $post ); ?>" class="btn"><?php echo $post->title; ?> READ ENTRY</a> 
+				</p>
+			</div>
+
+		   <?php endforeach; wp_reset_postdata(); ?>
+
+
+		</div>
 	</section>
 
 	</main><!-- #main -->

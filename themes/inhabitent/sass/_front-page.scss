@@ -5,7 +5,8 @@
 
 .site-header {
     display: flex;
-    background-color: hsla(0,0%,100%,.85);
+    background-color: rgba(white, 0.6);
+    // background-color: hsla(0,0%,100%,.85);
     position: fixed;
     z-index: 99;
     min-width: 100%;
@@ -31,19 +32,48 @@
 
 }
 
-.product-type-blocks {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    // height: auto;
+.product-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 1200px;
 
-    .product-type-block-wrapper {
-        border: 1px solid black;
-       
+    h2 {
+        text-align: center;
     }
-    img {
-        width: 25%;
+    .product-type-blocks {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        // height: auto;
+
+        .product-type-block-wrapper {
+            border: 1px solid black;
+            padding: 25px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                background: #248a83;
+                padding: 10px 20px;
+            }
+             
+            
+        
+        }
+        img {
+            width: 25%;
+        }
     }
 }
 
+// .f-journals {
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 1200px;
+//     min-height: 100%;
+//     .f-journal {
+//         display: flex;
+//     }
+// }
 
