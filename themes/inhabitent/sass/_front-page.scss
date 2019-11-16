@@ -1,3 +1,49 @@
-.fp-journals {
+.f-journals {
     display: flex;
+    // position: fixed; 
 }
+
+.site-header {
+    display: flex;
+    background-color: hsla(0,0%,100%,.85);
+    position: fixed;
+    z-index: 99;
+    min-width: 100%;
+    padding: 0 10rem;
+
+    .site-branding{
+        img {
+            height: 36px;
+        }      
+    }
+
+    .content-area {
+        width: 75%;
+    }
+
+    .main-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #248A83;
+    }
+
+}
+
+.product-type-blocks {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    // height: auto;
+
+    .product-type-block-wrapper {
+        border: 1px solid black;
+       
+    }
+    img {
+        width: 25%;
+    }
+}
+
+

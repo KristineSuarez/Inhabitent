@@ -2,4 +2,48 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+// Global Layout
+
+.site-content {
+    display: flex;
+    width: 100%;
+
+    .content-area {
+        width: 75%;
+        flex-grow: 1;
+    }
+    .widget-area {
+        width: 25%;
+    }
+}
+
 /* Front page */
+
+// Journal Page
+.blog {
+    .entry-header {
+        background: #ddd;
+        position: relative;
+        .entry-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            background: #248a83;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .entry-meta {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+            background: #248a83;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -16,8 +16,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		
 
 	<section class="product-info container">
             <h2>Shop Stuff</h2>
@@ -50,10 +49,10 @@ get_header(); ?>
    		$product_posts = get_posts( $args ); // returns an array of posts
 	?>
 
-	<section class="fp-journals">
+	<section class="f-journals">
 	<?php 
 		foreach ( $product_posts as $post ) : setup_postdata( $post ); 
-		echo "<div class='fp-journal'>";
+		echo "<div class='f-journal'>";
 			the_post_thumbnail('large');
 			the_title();
 			comments_number();
@@ -62,5 +61,7 @@ get_header(); ?>
 		endforeach; wp_reset_postdata();  ?>
 	</section>
 
-<?php get_sidebar(); ?>
+	</main><!-- #main -->
+</div><!-- #primary -->
+
 <?php get_footer(); ?>
