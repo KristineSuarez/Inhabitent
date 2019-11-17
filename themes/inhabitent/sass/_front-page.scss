@@ -1,12 +1,6 @@
-.f-journals {
-    display: flex;
-    // position: fixed; 
-}
-
 .site-header {
     display: flex;
     background-color: rgba(white, 0.6);
-    // background-color: hsla(0,0%,100%,.85);
     position: fixed;
     z-index: 99;
     min-width: 100%;
@@ -32,6 +26,7 @@
 
 }
 
+
 .product-info {
     margin-left: auto;
     margin-right: auto;
@@ -45,35 +40,57 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
-        // height: auto;
+            // height: auto;
 
-        .product-type-block-wrapper {
-            border: 1px solid black;
-            padding: 25px;
+    .product-type-block-wrapper {
+        border: 1px solid #e1e1e1;
+        padding: 25px;
 
-            a {
-                text-decoration: none;
-                color: white;
-                background: #248a83;
-                padding: 10px 20px;
-            }
-             
-            
-        
+        a {
+            text-decoration: none;
+            color: white;
+            background: #248a83;
+            padding: 10px 20px;
         }
-        img {
-            width: 25%;
+                
+            img {
+                width: 25%;
+            }
         }
     }
 }
 
-// .f-journals {
-//     margin-left: auto;
-//     margin-right: auto;
-//     width: 1200px;
-//     min-height: 100%;
-//     .f-journal {
-//         display: flex;
-//     }
-// }
+.journal-entries {
+    h2 {
+        text-align: center;
+    }
+    .journal-entries-container {
+        display: flex;
+        justify-content: space-around;
 
+        .journal-posts {
+            img {
+                width: 75%;
+            }
+        }
+    }
+
+}
+
+.adventures-container {
+    h2 {
+        text-align: center;
+    }
+    
+    .adventure-entries {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .adventure-post {
+        img {
+            width: 80%;
+        }
+    }
+
+}

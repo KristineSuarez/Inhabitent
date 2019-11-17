@@ -740,11 +740,6 @@ object {
           transform: translate(-50%, -50%);
   font-size: 50px; }
 
-.f-journals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,12 +782,38 @@ object {
             justify-content: space-between;
     text-align: center; }
     .product-info .product-type-blocks .product-type-block-wrapper {
-      border: 1px solid black;
+      border: 1px solid #e1e1e1;
       padding: 25px; }
       .product-info .product-type-blocks .product-type-block-wrapper a {
         text-decoration: none;
         color: white;
         background: #248a83;
         padding: 10px 20px; }
-    .product-info .product-type-blocks img {
-      width: 25%; }
+      .product-info .product-type-blocks .product-type-block-wrapper img {
+        width: 25%; }
+
+.journal-entries h2 {
+  text-align: center; }
+
+.journal-entries .journal-entries-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .journal-entries .journal-entries-container .journal-posts img {
+    width: 75%; }
+
+.adventures-container h2 {
+  text-align: center; }
+
+.adventures-container .adventure-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.adventures-container .adventure-post img {
+  width: 80%; }

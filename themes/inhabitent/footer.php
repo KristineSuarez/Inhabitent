@@ -35,7 +35,7 @@
 					</div>
 
 					<div class="footer-info">
-						<img src="../images/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo">
+						<img src="<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg'?>" alt="Inhabitent Logo">
 					</div>
 				</div>
 					
