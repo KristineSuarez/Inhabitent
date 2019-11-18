@@ -680,32 +680,56 @@ object {
         -ms-flex-positive: 1;
             flex-grow: 1; }
   .site-content .widget-area {
-    width: 25%; }
+    width: 25%;
+    margin-top: 5rem; }
 
 /* Front page */
-.blog .entry-header {
-  background: #ddd;
-  position: relative; }
-  .blog .entry-header .entry-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background: #248a83; }
-    .blog .entry-header .entry-title a {
+.blog .content-area {
+  padding: 10rem; }
+  .blog .content-area .entry-header {
+    background: #ddd;
+    position: relative; }
+    .blog .content-area .entry-header img {
+      height: auto;
+      width: 100%; }
+    .blog .content-area .entry-header .entry-title {
+      position: absolute;
+      top: 0;
+      left: 0;
       color: white;
-      text-decoration: none; }
-  .blog .entry-header .entry-meta {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: white;
-    background: #248a83; }
-  .blog .entry-header img {
-    width: 100%; }
+      background: #248a83;
+      padding: .5em;
+      margin-top: 2rem; }
+      .blog .content-area .entry-header .entry-title a {
+        color: white;
+        text-decoration: none; }
+    .blog .content-area .entry-header .entry-meta {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: white;
+      background: #248a83;
+      margin-bottom: 5rem;
+      padding: 0.5em; }
+    .blog .content-area .entry-header img {
+      width: 100%; }
+    .blog .content-area .entry-header .entry-content p {
+      padding: 10rem; }
+
+.archive .entry-header {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 75%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
+
+.archive .entry-content p {
+  display: none; }
 
 .site-footer {
-  background: url(../../images/dark-wood.png); }
+  background: url(../../images/dark-wood.png);
+  height: 350px; }
   .site-footer .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -814,6 +838,9 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.adventures-container .adventure-post a {
+  text-decoration: none; }
 
 .adventures-container .adventure-post img {
   width: 80%; }

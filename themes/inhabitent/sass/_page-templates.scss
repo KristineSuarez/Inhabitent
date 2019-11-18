@@ -14,6 +14,7 @@
     }
     .widget-area {
         width: 25%;
+        margin-top: 5rem;
     }
 }
 
@@ -21,29 +22,69 @@
 
 // Journal Page
 .blog {
-    .entry-header {
-        background: #ddd;
-        position: relative;
-        .entry-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: white;
-            background: #248a83;
-            a {
+    .content-area {
+        padding: 10rem;
+        .entry-header {
+            background: #ddd;
+            position: relative;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+            .entry-title {
+                position: absolute;
+                top: 0;
+                left: 0;
                 color: white;
-                text-decoration: none;
+                background: #248a83;
+                padding: .5em;
+                margin-top: 2rem;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            .entry-meta {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: white;
+                background: #248a83;
+                margin-bottom: 5rem;
+                padding: 0.5em
+            }
+            img {
+                width: 100%;
+            }
+            
+            .entry-content{
+                p {
+                    padding: 10rem;
+                }
             }
         }
-        .entry-meta {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            color: white;
-            background: #248a83;
-        }
-        img {
-            width: 100%;
+    }
+}
+
+.archive {
+
+    .entry-header {
+        object-fit: cover;
+        width: 75%;
+        height: fit-content;
+
+        // img {
+        // // object-fit: cover;
+        // // width: 75%;
+        // // height: fit-content;
+        // }
+
+    }
+    .entry-content {
+        p {
+            display: none;
         }
     }
+
 }
