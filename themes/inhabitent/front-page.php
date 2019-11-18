@@ -64,7 +64,7 @@ get_header(); ?>
 					<?php echo $post->title; ?>
 				</p>
 				<p>
-					<a href="<?php echo get_term_link ( $post ); ?>" class="btn"><?php echo $post->name; ?> READ ENTRY</a> 
+					<a href="<?php echo get_post_permalink( $post ); ?>" class="btn"><?php echo $post->name; ?> READ ENTRY</a> 
 				</p>
 			</div>
 
