@@ -902,7 +902,7 @@ object {
   margin: 0 auto;
   margin-bottom: 5rem; }
   .shop-grid .type-product {
-    border: 1px solid red; }
+    border: 1px solid #a1a1a1; }
     .shop-grid .type-product .entry-header {
       width: 100%;
       height: 16em; }
@@ -940,7 +940,7 @@ object {
   margin-bottom: 5rem;
   padding-top: 2rem; }
   .shop-slug-loop .type-product {
-    border: 1px solid red; }
+    border: 1px solid #a1a1a1; }
     .shop-slug-loop .type-product .entry-header {
       width: 100%;
       height: 16em; }
