@@ -11,6 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php if (is_post_type_archive('uncategorized')){
+				echo '';}
+			?>
 				
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
@@ -49,62 +53,88 @@ get_header(); ?>
 	?>
 
 	<section class="journal-entries">
-	<h2>INHABITENT JOURNAL</h2>
-			<?php 
-				foreach ( $product_posts as $post ) : setup_postdata ( $post ); 
-			?>
+		<h2>INHABITENT JOURNAL</h2>
+			
 		<div class="journal-entries-container">
+		<?php 
+				foreach ( $product_posts as $post ) : //setup_postdata ( $post );  
+			?>
 			<div class="journal-posts">
-				<?php 
-					the_post_thumbnail ('large');
-					the_title ();
-					comments_number();
-				?>
-				<p>
-					<?php echo $post->title; ?>
+			 	<?php the_post_thumbnail ('medium'); ?>  
+				<p class="journal-comment">
+					<span class="jc-span"><?php comments_number();?></span>
+					<span class="jc-date"><?php	$post_date = get_the_date('F j, Y'); echo $post_date; ?></span>
+					
 				</p>
-				<p>
+				
+				<div class="journal-posts-container">
+					<h3>
+						<a class="jp-title"href="<?php echo get_post_permalink ( $post ); ?>"><?php echo $post->post_title; ?></a>
+					</h3>
 					<a href="<?php echo get_post_permalink( $post ); ?>" class="btn"><?php echo $post->name; ?> READ ENTRY</a> 
-				</p>
+		   		</div>
+			
 			</div>
-
-		   <?php endforeach; wp_reset_postdata(); ?>
-
-
+			   
+			<?php endforeach; wp_reset_postdata(); ?>
 		</div>
+
 	</section>
 
 	<section class="adventures-container">
 		<h2>LASTEST ADVENTURES</h2>
-		<div class="adventure-entries">
-			<div class="adventure-post">
-				<img 
-					class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg'?>" alt="girl in a canoe"
-				>
-				<a href="">Getting Back to Nature in a Canoe</a>
-			</div>
+		<ul class="adventure-entries">
+			<li class="adventure-post">
+				<div class="adv-img">
+					<img 
+						class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg'?>" alt="girl in a canoe">
+				</div>
 
-			<div class="adventure-post">
-				<img 
-					class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg'?>" alt="bonfire"
-				>
-				<a href="">A Night with Friends at the Beach</a>
-			</div>
+					<div class="adv-title">
+						<h3 class="adv-title-grid"><a href="">Getting Back to Nature in a Canoe</a></h3>
+						<p class="adv-read">READ MORE</p>
+					</div>
+			</li>
+				
 
-			<div class="adventure-post">
-				<img 
-					class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg'?>" alt="hikers"
-				>
-				<a href="">Taking in the View at the Big Mountain</a>
-			</div>
+			<li class="adventure-post">
+				<div class="adv-img">
 
-			<div class="adventure-post">
-				<img 
-					class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg'?>" alt="Star-gazing"
-				>
-				<a href="">Star-Gazing at the Night Sky</a>
-			</div>
-		</div>
+					<img 
+						class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg'?>" alt="bonfire">
+				</div>
+
+				<div class="adv-title">
+					<h3 class="adv-title-grid"><a href="">A Night with Friends at the Beach</a></h3>	
+					<p class="adv-read">READ MORE</p>				
+				</div>
+			</li>
+
+			<li class="adventure-post">
+				<div class="adv-img">
+					<img 
+						class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg'?>" alt="hikers">
+				</div>
+
+				<div class="adv-title">
+					<h3 class="adv-title-grid"><a href="">Taking in the View at the Big Mountain</a></h3>
+					<p class="adv-read">READ MORE</p>
+
+				</div>
+			</li>
+
+			<li class="adventure-post">
+				<div class="adv-img">
+					<img 
+						class="adventure-post-pic" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg'?>" alt="Star-gazing">
+				</div>
+
+				<div class="adv-title">
+					<h3 class="adv-title-grid"><a href="">Star-Gazing at the Night Sky</a></h3>
+					<p class="adv-read">READ MORE</p>
+				</div>
+			</li>
+		</ul>
 
 	</section>
 

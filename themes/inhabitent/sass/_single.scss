@@ -1,0 +1,40 @@
+.post-template-default {
+    .content-area {
+        padding: 10rem;
+
+        .entry-header {
+            background: #ddd;
+            position: relative;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+            .entry-title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #fff;
+                background: #248a83;
+                padding: .5em;
+                margin-top: 2rem;
+            }
+            .entry-meta {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: white;
+                background: #248a83;
+                margin-bottom: 5rem;
+                padding: 0.5em;
+               
+                .comments-link {
+                    a{
+                        text-decoration: none;
+                        color: #ffffff
+                    }
+                }
+            }
+        }
+    }
+}
