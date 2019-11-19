@@ -1,0 +1,49 @@
+.shop-objects {
+    font-family: 'Merriweather', serif;
+    padding-top: 5rem;
+    text-align: center;
+
+    .shop-name {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.shop-slug-loop {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    
+    .type-product {
+        border: 1px solid red;
+
+        .entry-header {
+            width: 100%;
+            height: 16em;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+            .shop-price-container {
+                display: flex;
+                justify-content: space-around;
+
+                .entry-title {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+    }
+
+}
