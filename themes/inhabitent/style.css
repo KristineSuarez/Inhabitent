@@ -991,6 +991,17 @@ object {
 .single-product .content-area {
   padding: 8rem; }
 
+.page .content-area {
+  padding: 7rem; }
+  .page .content-area .entry-header {
+    position: relative; }
+    .page .content-area .entry-header img {
+      height: auto;
+      width: 100%; }
+    .page .content-area .entry-header .entry-title {
+      font-size: 30px;
+      color: #404040; }
+
 html {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;

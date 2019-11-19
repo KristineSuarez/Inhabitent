@@ -1,0 +1,20 @@
+.page {
+    .content-area {
+        padding: 7rem;
+
+        .entry-header {
+            // background: #ddd;
+            position: relative;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+            .entry-title {
+                font-size: 30px;
+                color: #404040;
+            }
+        }
+    }
+
+}
