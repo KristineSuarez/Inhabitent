@@ -11,7 +11,6 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
@@ -29,7 +28,7 @@
 					<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</h1>
-					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
+					<!-- <p class="site-description"><php bloginfo( 'description' ); ?></p> -->
 				</div><!-- .site-branding -->
 			
 					<nav id="site-navigation" class="main-navigation" role="navigation">

@@ -1,10 +1,19 @@
-
+.main-navigation {
+    a {
+        text-decoration: none;
+        color: #248a83;
+        padding-right: 2rem;
+    }
+}
     .widget-area {
         width: 25%;
     }
 
     .f-banner {
         position: relative;
+        // img {
+        //     background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696;
+        // }
     }
 
     .f-banner-logo {
@@ -12,6 +21,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        img {
+            background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696;
+        }
+
      }
 
      .about-header {
