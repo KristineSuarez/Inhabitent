@@ -142,24 +142,6 @@
 
         }
 
-            // .journal-comment {
-            //     display: flex;
-            //     justify-content: space-evenly;
-            // }
-
-            // .journal-posts-container {
-            //     .jp-title {
-            //         color: #248a83;
-            //         &:hover {
-            //             color:#2f1339;
-            //         }
-
-            //     }
-            //     a{
-            //         text-decoration: none;
-            //         color: #000000;
-            //     }
-            // }
         }
     }
 }
@@ -212,6 +194,23 @@
     .star-gazing { grid-area: star-gazing; }
     
     .adv-title {
+        .at-canoe {
+            font-size: 35px;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .at-beach {
+            font-size: 30px;
+            padding-right: 1rem;
+            padding-left: 1.5rem;
+        }
+        .at-mountain,
+        .at-star {
+            font-size: 20px;
+            padding-right: .5rem;
+            padding-left: .5rem;
+        }
+
         .title-grid {
             position: absolute;
             top: 0;
@@ -222,9 +221,37 @@
             }
             
         }
-        p {
-            position: absolute;
-            // transform: translate(10px, -400px);
-        }
+            p {
+                position: absolute;
+                border: 1px solid black;
+                padding: 5px;
+                &:hover {
+                    background: #248a83;
+                    color: #ffffff;
+                    border-color: #248a83;
+                }
+            }
+            .read-canoe {
+                transform: translate(19px, -400px);
+            }
+            .read-beach {
+                transform: translate(24px, -273px);                
+            }
+            .read-mountain,
+            .read-star {
+                transform: translate(10px, -92px);                
+            }
+
     }  
+    .more-adventures {
+        color: #ffffff;
+        border: 1px solid #248a83;
+        background-color: #248a83;
+        padding: .5rem;
+        text-align: center;
+
+        &:hover {
+            background-color: #19625d;
+        }
+    }
 }

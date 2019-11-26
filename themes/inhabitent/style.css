@@ -945,6 +945,22 @@ object {
 .adventures-container .star-gazing {
   grid-area: star-gazing; }
 
+.adventures-container .adv-title .at-canoe {
+  font-size: 35px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
+.adventures-container .adv-title .at-beach {
+  font-size: 30px;
+  padding-right: 1rem;
+  padding-left: 1.5rem; }
+
+.adventures-container .adv-title .at-mountain,
+.adventures-container .adv-title .at-star {
+  font-size: 20px;
+  padding-right: .5rem;
+  padding-left: .5rem; }
+
 .adventures-container .adv-title .title-grid {
   position: absolute;
   top: 0;
@@ -954,7 +970,35 @@ object {
     color: bisque; }
 
 .adventures-container .adv-title p {
-  position: absolute; }
+  position: absolute;
+  border: 1px solid black;
+  padding: 5px; }
+  .adventures-container .adv-title p:hover {
+    background: #248a83;
+    color: #ffffff;
+    border-color: #248a83; }
+
+.adventures-container .adv-title .read-canoe {
+  -webkit-transform: translate(19px, -400px);
+          transform: translate(19px, -400px); }
+
+.adventures-container .adv-title .read-beach {
+  -webkit-transform: translate(24px, -273px);
+          transform: translate(24px, -273px); }
+
+.adventures-container .adv-title .read-mountain,
+.adventures-container .adv-title .read-star {
+  -webkit-transform: translate(10px, -92px);
+          transform: translate(10px, -92px); }
+
+.adventures-container .more-adventures {
+  color: #ffffff;
+  border: 1px solid #248a83;
+  background-color: #248a83;
+  padding: .5rem;
+  text-align: center; }
+  .adventures-container .more-adventures:hover {
+    background-color: #19625d; }
 
 .shop-container {
   padding-top: 5rem;
