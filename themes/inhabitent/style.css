@@ -571,6 +571,58 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* header nav*/
+.site-header {
+  border: 1px solid #e1e1e1; }
+
+/*pages border*/
+.blog .content-area,
+.page .content-area,
+.single .content-area,
+.search .content-area {
+  border: 1px solid #e1e1e1; }
+
+.blog .widget-area,
+.page .widget-area,
+.single .widget-area,
+.search .widget-area {
+  margin-left: 10px; }
+  .blog .widget-area .widget-title,
+  .page .widget-area .widget-title,
+  .single .widget-area .widget-title,
+  .search .widget-area .widget-title {
+    font-size: 1.5rem;
+    color: #2f1339; }
+  .blog .widget-area .day-of-week,
+  .page .widget-area .day-of-week,
+  .single .widget-area .day-of-week,
+  .search .widget-area .day-of-week {
+    font-weight: 700; }
+
+/* contact form */
+.wpcf7 .wpcf7-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
+  .wpcf7 .wpcf7-form label {
+    font-size: 1.3rem;
+    color: #2f1339; }
+
+.wpcf7 .wpcf7-submit {
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+  font-size: 17px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: none; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -713,8 +765,16 @@ object {
       padding: 0.5em; }
     .blog .content-area .entry-header img {
       width: 100%; }
-    .blog .content-area .entry-header .entry-content p {
-      padding: 10rem; }
+
+.blog .entry-content a {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px; }
+  .blog .entry-content a:hover {
+    color: #ffffff;
+    background-color: #248a83;
+    border: 1px solid #248a83; }
 
 .archive .entry-header {
   -o-object-fit: cover;
@@ -769,8 +829,8 @@ object {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .f-banner-logo img {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696; }
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%); }
 
 .about-header {
   text-align: center;
@@ -845,19 +905,19 @@ object {
       .product-info .product-type-blocks .product-type-block-wrapper img {
         width: 25%; }
 
-.journal-entries {
+.journal-box .journal-entries {
   width: 100%; }
-  .journal-entries h2 {
+  .journal-box .journal-entries h2 {
     width: 100%;
     text-align: center;
     font-size: 40px;
     color: #2f1339;
     font-weight: 400; }
-  .journal-entries .journal-entries-container {
+  .journal-box .journal-entries .journal-entries-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .journal-entries .journal-entries-container .journal-posts {
+    .journal-box .journal-entries .journal-entries-container .journal-posts {
       height: 100%;
       width: 100%;
       -ms-flex-preferred-size: 30%;
@@ -867,32 +927,32 @@ object {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .journal-entries .journal-entries-container .journal-posts img {
+      .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts img {
         -o-object-fit: cover;
            object-fit: cover;
         width: auto;
         height: 20vmax;
         padding-bottom: 5px;
         background: #e1e1e1; }
-      .journal-entries .journal-entries-container .journal-posts .journal-posts-container {
+      .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container {
         padding: 20px; }
-        .journal-entries .journal-entries-container .journal-posts .journal-posts-container .journal-comment {
+        .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container .journal-comment {
           margin-bottom: 0;
           font-size: 12px; }
-        .journal-entries .journal-entries-container .journal-posts .journal-posts-container h3 {
+        .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container h3 {
           margin-top: 7px;
           font-size: 19px; }
-        .journal-entries .journal-entries-container .journal-posts .journal-posts-container .jp-title {
+        .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container .jp-title {
           color: #248a83; }
-          .journal-entries .journal-entries-container .journal-posts .journal-posts-container .jp-title:hover {
+          .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container .jp-title:hover {
             color: #2f1339; }
-        .journal-entries .journal-entries-container .journal-posts .journal-posts-container a {
+        .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container a {
           text-decoration: none; }
-        .journal-entries .journal-entries-container .journal-posts .journal-posts-container .btn {
+        .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container .btn {
           color: #000000;
           border: 1px solid #000000;
           padding: 10px; }
-          .journal-entries .journal-entries-container .journal-posts .journal-posts-container .btn:hover {
+          .journal-box .journal-entries .journal-entries-container .journal-posts .journal-posts-container .btn:hover {
             background-color: #248a83;
             border: 1px solid #248a83;
             color: #ffffff; }
@@ -913,6 +973,9 @@ object {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "canoe-girl canoe-girl beach beach" "canoe-girl canoe-girl mountain star-gazing" ". . . ."; }
+  .adventures-container .adventures-grid-container img {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%); }
 
 .adventures-container .canoe-girl,
 .adventures-container .beach,
@@ -926,7 +989,6 @@ object {
   position: relative; }
 
 .adventures-container .adventure-post-pic {
-  background: rgba(0, 0, 0, 0.35);
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1076,15 +1138,15 @@ object {
           color: black;
           font-weight: 100; }
 
-.post-template-default .content-area {
+.single .content-area {
   padding: 10rem; }
-  .post-template-default .content-area .entry-header {
+  .single .content-area .entry-header {
     background: #ddd;
     position: relative; }
-    .post-template-default .content-area .entry-header img {
+    .single .content-area .entry-header img {
       height: auto;
       width: 100%; }
-    .post-template-default .content-area .entry-header .entry-title {
+    .single .content-area .entry-header .entry-title {
       position: absolute;
       top: 0;
       left: 0;
@@ -1092,7 +1154,7 @@ object {
       background: #248a83;
       padding: .5em;
       margin-top: 2rem; }
-    .post-template-default .content-area .entry-header .entry-meta {
+    .single .content-area .entry-header .entry-meta {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -1100,15 +1162,52 @@ object {
       background: #248a83;
       margin-bottom: 5rem;
       padding: 0.5em; }
-      .post-template-default .content-area .entry-header .entry-meta .comments-link a {
+      .single .content-area .entry-header .entry-meta .comments-link a {
         text-decoration: none;
         color: #ffffff; }
+  .single .content-area .entry-footer .cat-links a,
+  .single .content-area .entry-footer .tags-links a {
+    text-decoration: none;
+    color: #248a83; }
+  .single .content-area .entry-footer .single-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .single .content-area .entry-footer .single-btn p {
+      border: 1px solid #000000;
+      padding: 10px;
+      margin-right: 10px; }
+      .single .content-area .entry-footer .single-btn p:hover {
+        background: #248a83;
+        border: 1px solid #248a83;
+        color: #ffffff; }
+  .single .content-area .wpcf7 .wpcf7-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+    .single .content-area .wpcf7 .wpcf7-form label {
+      font-size: 1.3rem;
+      color: #2f1339; }
+  .single .content-area .wpcf7 .wpcf7-submit {
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #ffffff;
+    font-size: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: none; }
 
 .single-product .content-area {
   padding: 8rem; }
 
 .page .content-area {
-  padding: 7rem; }
+  padding: 5rem; }
   .page .content-area .entry-header {
     position: relative; }
     .page .content-area .entry-header img {
@@ -1117,6 +1216,22 @@ object {
     .page .content-area .entry-header .entry-title {
       font-size: 30px;
       color: #404040; }
+  .page .content-area .entry-content h2 {
+    text-align: left;
+    font-size: 40px;
+    color: #2f1339; }
+  .page .content-area .entry-content p {
+    font-size: 18px; }
+
+.entry-content .about-story {
+  text-align: center;
+  font-size: 40px;
+  color: #2f1339; }
+
+.entry-content .about-tag {
+  font-size: 18px;
+  margin-left: 11rem;
+  margin-right: 11rem; }
 
 html {
   scroll-behavior: smooth;

@@ -2,6 +2,60 @@
 # Content
 --------------------------------------------------------------*/
 
+
+/* header nav*/
+.site-header {
+	border: 1px solid #e1e1e1;
+}
+
+/*pages border*/
+.blog,
+.page,
+.single,
+.search {
+	.content-area {
+		border: 1px solid #e1e1e1;
+	}
+	.widget-area {
+		margin-left: 10px;
+		.widget-title {
+			font-size: 1.5rem;
+			color: #2f1339;
+		}
+		.day-of-week {
+			font-weight: 700;
+		}
+	}
+}
+
+/* contact form */
+.wpcf7 {
+	.wpcf7-form {  
+		display: flex;
+		flex-flow: column wrap;  
+		label {
+			font-size: 1.3rem;
+			color: #2f1339;
+		}
+		// .wpcf7-form-control {
+		//     text {
+		//     background-color: #f4f4f4;
+		//     }
+		// }
+	}
+	.wpcf7-submit {
+		background-color: #248a83;
+		border: 1px solid #248a83;
+		box-shadow: none;
+		color: #ffffff;
+		font-size: 17px;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-shadow: none;
+	
+	}
+}
+
 /* Posts and pages */
 
 .sticky {

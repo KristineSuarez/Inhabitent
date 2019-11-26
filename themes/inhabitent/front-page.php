@@ -17,7 +17,6 @@ get_header(); ?>
 			?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
-						<!-- <php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -67,6 +66,7 @@ get_header(); ?>
    		$product_posts = get_posts( $args ); // returns an array of posts
 	?>
 
+<div class="journal-box">
 	<section class="journal-entries">
 		<h2>INHABITENT JOURNAL</h2>
 			
@@ -83,7 +83,6 @@ get_header(); ?>
 							<span class="jc-span"><?php comments_number();?></span>
 						</p>
 						
-						<!-- <div class="journal-posts-container"> -->
 							<h3>
 								<a class="jp-title"href="<?php echo get_post_permalink ( $post ); ?>"><?php echo $post->post_title; ?></a>
 							</h3>
@@ -96,6 +95,7 @@ get_header(); ?>
 		</div>
 
 	</section>
+</div>
 
 	<section class="adventures-container">
 		<h2>LASTEST ADVENTURES</h2>

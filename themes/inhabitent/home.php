@@ -41,6 +41,9 @@ get_header(); ?>
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<p class="journal-btn"><a href="<?php echo get_post_permalink( $post ); ?>" class="journal-btn2"><?php echo $post->name; ?> READ MORE</a></p>
+		
+	
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 

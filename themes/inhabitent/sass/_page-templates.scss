@@ -56,15 +56,26 @@
             }
             img {
                 width: 100%;
-            }
-            
-            .entry-content{
-                p {
-                    padding: 10rem;
-                }
-            }
+            }    
         }
     }
+}
+
+.blog {
+.entry-content{
+    a {
+        text-decoration: none;
+        color: #000000;
+        border: 1px solid #000000;
+        padding: 10px;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #248a83;
+            border: 1px solid #248a83;
+        }
+    }
+}
 }
 
 .archive {

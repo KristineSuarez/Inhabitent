@@ -1,4 +1,4 @@
-.post-template-default {
+.single {
     .content-area {
         padding: 10rem;
 
@@ -36,5 +36,54 @@
                 }
             }
         }
+        .entry-footer {
+            .cat-links,
+            .tags-links {
+                a {
+                text-decoration: none;
+                color: #248a83;
+                }
+            }
+            .single-btn {
+                display: flex;
+                p {
+                    border: 1px solid #000000;
+                    padding: 10px;
+                    margin-right: 10px;
+                    &:hover {
+                        background: #248a83;
+                        border: 1px solid #248a83;
+                        color: #ffffff;
+                    }
+    
+                }
+            }
+        }
+            .wpcf7 {
+                .wpcf7-form {  
+                    display: flex;
+                    flex-flow: column wrap;  
+                    label {
+                        font-size: 1.3rem;
+                        color: #2f1339;
+                    }
+                    // .wpcf7-form-control {
+                    //     text {
+                    //     background-color: #f4f4f4;
+                    //     }
+                    // }
+                }
+                .wpcf7-submit {
+                    background-color: #248a83;
+                    border: 1px solid #248a83;
+                    box-shadow: none;
+                    color: #ffffff;
+                    font-size: 17px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    text-shadow: none;
+                
+                }
+            }
     }
 }
