@@ -579,24 +579,25 @@ a {
 .blog .content-area,
 .page .content-area,
 .single .content-area,
-.search .content-area {
-  border: 1px solid #e1e1e1; }
+.archive .content-area {
+  border: 1px solid #e1e1e1;
+  padding: 5rem; }
 
 .blog .widget-area,
 .page .widget-area,
 .single .widget-area,
-.search .widget-area {
+.archive .widget-area {
   margin-left: 10px; }
   .blog .widget-area .widget-title,
   .page .widget-area .widget-title,
   .single .widget-area .widget-title,
-  .search .widget-area .widget-title {
+  .archive .widget-area .widget-title {
     font-size: 1.5rem;
     color: #2f1339; }
   .blog .widget-area .day-of-week,
   .page .widget-area .day-of-week,
   .single .widget-area .day-of-week,
-  .search .widget-area .day-of-week {
+  .archive .widget-area .day-of-week {
     font-weight: 700; }
 
 /* contact form */
@@ -1181,27 +1182,6 @@ object {
         background: #248a83;
         border: 1px solid #248a83;
         color: #ffffff; }
-  .single .content-area .wpcf7 .wpcf7-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap; }
-    .single .content-area .wpcf7 .wpcf7-form label {
-      font-size: 1.3rem;
-      color: #2f1339; }
-  .single .content-area .wpcf7 .wpcf7-submit {
-    background-color: #248a83;
-    border: 1px solid #248a83;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: #ffffff;
-    font-size: 17px;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-shadow: none; }
 
 .single-product .content-area {
   padding: 8rem; }
@@ -1216,7 +1196,7 @@ object {
     .page .content-area .entry-header .entry-title {
       font-size: 30px;
       color: #404040; }
-  .page .content-area .entry-content h2 {
+  .page .content-area .entry-content .find-page {
     text-align: left;
     font-size: 40px;
     color: #2f1339; }
@@ -1232,6 +1212,12 @@ object {
   font-size: 18px;
   margin-left: 11rem;
   margin-right: 11rem; }
+
+.archive .site-content .page-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 15px; }
 
 html {
   scroll-behavior: smooth;

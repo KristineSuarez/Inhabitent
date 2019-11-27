@@ -14,7 +14,7 @@
 
 		<div class="shop-price-container">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<p class="product-price"> $<?php the_field('price'); ?></p>
+		<p class="product-price"> <?php the_field('price'); ?></p>
 		</div>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
