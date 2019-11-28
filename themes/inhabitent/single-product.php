@@ -22,7 +22,7 @@ get_header(); ?>
 				
 					<div class="product-description">
 						<?php the_title( '<h1 class="entry-product">', '</h1>' ); ?>
-						<h2>Price: $<?php the_field('price'); ?></h2>
+						<h2>$<?php the_field('price'); ?></h2>
 
 						<div class="entry-content">
 							<?php the_content(); ?>

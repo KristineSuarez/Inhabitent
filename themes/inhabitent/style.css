@@ -655,7 +655,16 @@ a {
   .search .widget-area .widget-title,
   .error404 .widget-area .widget-title {
     font-size: 1.5rem;
-    color: #2f1339; }
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif; }
+  .blog .widget-area .textwidget a,
+  .page .widget-area .textwidget a,
+  .single .widget-area .textwidget a,
+  .archive .widget-area .textwidget a,
+  .search .widget-area .textwidget a,
+  .error404 .widget-area .textwidget a {
+    text-decoration: none;
+    color: #248a83; }
   .blog .widget-area .day-of-week,
   .page .widget-area .day-of-week,
   .single .widget-area .day-of-week,
@@ -663,6 +672,21 @@ a {
   .search .widget-area .day-of-week,
   .error404 .widget-area .day-of-week {
     font-weight: 700; }
+  .blog .widget-area .widget_archive ul,
+  .page .widget-area .widget_archive ul,
+  .single .widget-area .widget_archive ul,
+  .archive .widget-area .widget_archive ul,
+  .search .widget-area .widget_archive ul,
+  .error404 .widget-area .widget_archive ul {
+    list-style: none; }
+    .blog .widget-area .widget_archive ul a,
+    .page .widget-area .widget_archive ul a,
+    .single .widget-area .widget_archive ul a,
+    .archive .widget-area .widget_archive ul a,
+    .search .widget-area .widget_archive ul a,
+    .error404 .widget-area .widget_archive ul a {
+      text-decoration: none;
+      color: #248a83; }
 
 /* contact form */
 .wpcf7 .wpcf7-form {
@@ -821,10 +845,14 @@ object {
       color: #ffffff;
       background: #248a83;
       padding: .5em;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2rem; }
       .blog .content-area .entry-header .entry-title a {
         color: white;
         text-decoration: none; }
+        .blog .content-area .entry-header .entry-title a:hover {
+          color: #f0e4d1; }
     .blog .content-area .entry-header .entry-meta {
       position: absolute;
       bottom: 0;
@@ -832,7 +860,8 @@ object {
       color: white;
       background: #248a83;
       margin-bottom: 5rem;
-      padding: 0.5em; }
+      padding: 0.5em;
+      font-family: 'Novecento Sans Web', sans-serif; }
     .blog .content-area .entry-header img {
       width: 100%; }
 
@@ -869,7 +898,8 @@ object {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .site-footer .footer-container .footer-info h3 {
-      color: #d99054; }
+      color: #d99054;
+      font-family: 'Novecento Sans Web', sans-serif; }
     .site-footer .footer-container .footer-info .footer-side {
       color: #ffffff; }
       .site-footer .footer-container .footer-info .footer-side a {
@@ -879,12 +909,14 @@ object {
 .site-info {
   text-align: center;
   min-width: 100%;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 .main-navigation a {
   text-decoration: none;
   color: #248a83;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 .widget-area {
   width: 25%; }
@@ -971,7 +1003,8 @@ object {
     text-align: center;
     font-size: 40px;
     color: #2f1339;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .product-info .product-type-blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1006,7 +1039,8 @@ object {
     text-align: center;
     font-size: 40px;
     color: #2f1339;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .journal-box .journal-entries .journal-entries-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1068,7 +1102,8 @@ object {
   text-align: center;
   font-size: 40px;
   color: #2f1339;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 .adventures-container .adventures-grid-container {
   display: grid;
@@ -1175,14 +1210,16 @@ object {
   padding-top: 5rem;
   text-align: center; }
   .shop-container .shop-header .shop-title {
-    font-size: 40px; }
+    font-size: 40px;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .shop-container .shop-list {
     border-bottom: 1px dashed #c8c8c8;
     padding-bottom: 2rem; }
     .shop-container .shop-list a {
       text-decoration: none;
       color: #248a83;
-      padding: 3rem; }
+      padding: 3rem;
+      font-family: 'Novecento Sans Web', sans-serif; }
 
 .shop-grid {
   display: grid;
@@ -1232,7 +1269,8 @@ object {
   text-align: center; }
   .shop-objects .shop-name {
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: 'Novecento Sans Web', sans-serif; }
 
 .shop-slug-loop {
   display: grid;
@@ -1278,7 +1316,9 @@ object {
       color: #fff;
       background: #248a83;
       padding: .5em;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2rem; }
     .single .content-area .entry-header .entry-meta {
       position: absolute;
       bottom: 0;
@@ -1321,9 +1361,12 @@ object {
     margin-left: 6em; }
     .single-product-shop article .product-description h1 {
       color: #D99054;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 2rem; }
     .single-product-shop article .product-description h2 {
-      font-weight: 400; }
+      font-weight: 400;
+      font-family: 'Novecento Sans Web', sans-serif; }
   .single-product-shop article .header-product img {
     margin-top: 2em;
     height: 25rem;
@@ -1338,18 +1381,21 @@ object {
       width: 100%; }
     .page .content-area .entry-header .entry-title {
       font-size: 30px;
-      color: #404040; }
+      color: #404040;
+      font-family: 'Novecento Sans Web', sans-serif; }
   .page .content-area .entry-content .find-page {
     text-align: left;
     font-size: 40px;
-    color: #2f1339; }
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .page .content-area .entry-content p {
     font-size: 18px; }
 
 .entry-content .about-story {
   text-align: center;
   font-size: 40px;
-  color: #2f1339; }
+  color: #2f1339;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 .entry-content .about-tag {
   font-size: 18px;
@@ -1380,12 +1426,14 @@ object {
   font-size: 2rem;
   text-transform: uppercase;
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 .search-header2 .search-title2 a {
   text-decoration: none;
   color: #248a83;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: 'Novecento Sans Web', sans-serif; }
   .search-header2 .search-title2 a:hover {
     color: #2f1339; }
 
@@ -1420,7 +1468,6 @@ h1,
 h2,
 h3,
 p {
-  font-family: 'Merriweather Web','serif';
   font-size: 16px; }
 
 body {

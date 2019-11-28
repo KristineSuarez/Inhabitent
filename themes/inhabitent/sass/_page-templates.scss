@@ -40,9 +40,15 @@
                 background: #248a83;
                 padding: .5em;
                 margin-top: 2rem;
+                font-family: 'Novecento Sans Web', sans-serif;
+                font-size: 2rem;
                 a {
                     color: white;
                     text-decoration: none;
+                    &:hover {
+                        color: #f0e4d1;
+                    }
+    
                 }
             }
             .entry-meta {
@@ -52,7 +58,8 @@
                 color: white;
                 background: #248a83;
                 margin-bottom: 5rem;
-                padding: 0.5em
+                padding: 0.5em;
+                font-family: 'Novecento Sans Web', sans-serif;
             }
             img {
                 width: 100%;

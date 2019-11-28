@@ -25,9 +25,25 @@
 		.widget-title {
 			font-size: 1.5rem;
 			color: #2f1339;
+			font-family: 'Novecento Sans Web', sans-serif;
+		}
+		.textwidget {
+			a {
+				text-decoration: none;
+				color: #248a83;
+			}
 		}
 		.day-of-week {
 			font-weight: 700;
+		}
+		.widget_archive {
+			ul {
+				list-style: none;
+				a {
+					text-decoration: none;
+					color: #248a83;
+				}
+			}
 		}
 	}
 }
