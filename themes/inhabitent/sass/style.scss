@@ -74,6 +74,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page";
 @import "page-about";
 @import "archive";
+@import "404";
+@import "search";
 
 html {
     scroll-behavior: smooth;
@@ -87,7 +89,11 @@ html {
  h2,
  h3,
  p {
-	font-family: 'Merriweather', serif;
+    font-family: 'Merriweather Web';
 	font-size: 16px;
+ }
+
+ body {
+    font-family: 'Merriweather Web','serif';
  }
 

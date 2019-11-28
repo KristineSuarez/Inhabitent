@@ -1,0 +1,25 @@
+.error-404 {
+    .error-header {
+        .error-title {
+            font-size: 2.5rem;
+        }
+    }
+    .error-content {
+            h2 {
+                font-size: 1.3rem;
+                color: #2f1339;
+            }
+            ul {
+                list-style: none;
+                line-height: 2rem;
+
+                li {
+                    a {
+                    text-decoration: none;
+                    color: #248a83;
+                    }
+                }
+            }
+        
+    }
+}

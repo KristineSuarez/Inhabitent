@@ -18,10 +18,6 @@ get_header(); ?>
 						<?php
 							$x= get_queried_object();
 							echo $x -> name;
-							// echo $x -> description;
-							
-							// the_archive_title( '<h1 class="page-title">', '</h1>' );
-							// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</div>
 					<div class="shop-description">

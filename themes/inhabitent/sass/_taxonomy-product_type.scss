@@ -1,4 +1,9 @@
 .shop-objects {
+    border-bottom: 1px dashed #c8c8c8;
+    padding-bottom: 2rem;
+}
+
+.shop-objects {
     font-family: 'Merriweather', serif;
     padding-top: 5rem;
     text-align: center;
@@ -10,13 +15,13 @@
 }
 
 .shop-slug-loop {
-    width: 70%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.5rem;
     margin: 0 auto;
     margin-bottom: 5rem;
     padding-top: 2rem;
+    height: 26vmax;
     
     .type-product {
         border: 1px solid #a1a1a1;

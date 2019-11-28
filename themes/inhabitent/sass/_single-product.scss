@@ -1,5 +1,25 @@
-.single-product {
-    .content-area {
-        padding: 8rem;
+.single-product-shop {
+    article {
+        padding-top: 1em;
+        display: flex;
+        flex-direction: row;
+        .product-description {
+            width: 49%;
+            margin-left: 6em;
+            h1 {
+                color: #D99054;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-weight: 400;
+            }
+        }
+        .header-product{
+             img {
+            margin-top: 2em;
+            height: 25rem;
+            max-width: 100%;
+            }
+        }
     }
 }

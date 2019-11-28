@@ -29,7 +29,6 @@ get_header(); ?>
 								'taxonomy' => 'product_type'
 								)) ;
 								foreach($product as $x){
-									// echo $x->term_id;
 									echo '<a href=" '. get_term_link($x) .'">'.$x->name.'</a>';
 							}
 
@@ -45,8 +44,8 @@ get_header(); ?>
 								<?php the_post_thumbnail( 'large' ); ?>
 							<?php endif; ?>
 
-							<div class="shop-price-container">
-							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+							<div class="sp-container">
+							<?php the_title( sprintf( '<h2 class="shop-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 							<p class="product-price"> $<?php the_field('price'); ?></p>
 							</div>
 
