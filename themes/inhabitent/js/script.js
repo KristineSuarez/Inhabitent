@@ -1,5 +1,5 @@
 
-let $tmpBool=false;
+let $searchBool=false;
 
 (function($) {
    
@@ -21,11 +21,11 @@ let $tmpBool=false;
         console.log($(document).scrollTop());
         
             if($(document).scrollTop()>=950){
-                if(!$tmpBool){
+                if(!$searchBool){
                     $('.site-header').css({
                         position:'fixed'
                     });
-                    $tmpBool=true;
+                    $searchBool=true;
                 }
                
             }
@@ -34,7 +34,7 @@ let $tmpBool=false;
                     position:'absolute'
 
                 });
-                $tmpBool=false;
+                $searchBool=false;
             }
         
     });
