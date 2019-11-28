@@ -66,7 +66,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "footer";
 @import "header";
 @import "front-page"; 
-@import "home"; 
 @import "archive-product";
 @import "taxonomy-product_type";
 @import "single";
@@ -89,7 +88,7 @@ html {
  h2,
  h3,
  p {
-    font-family: 'Merriweather Web';
+    font-family: 'Merriweather Web','serif';
 	font-size: 16px;
  }
 

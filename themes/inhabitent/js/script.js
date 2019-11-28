@@ -1,16 +1,9 @@
-// (function ($) {
-//     // jQuery no conflict mode
-//     $(".search-header .icon-search").click(function (event) {
-//         event.preventDefault();
-//         $(".site-header .search-field").show().focus();
-//     });
-//     $(".search-header .search-field").blur(function () {
-//         $(".site-header .search-field").hide();
-//     });
-//  })(jQuery);
 
+let $tmpBool=false;
 
 (function($) {
+   
+    
     $('.search-submit').on('click', function(event) {
       event.preventDefault();
       if (!$('.search-field').hasClass('search-animation')) {
@@ -22,5 +15,27 @@
     });
     $('.search-field').on('blur', function() {
       $('.search-field').removeClass('search-animation');
+    });
+
+    $(document).on('scroll',function(){
+        console.log($(document).scrollTop());
+        
+            if($(document).scrollTop()>=950){
+                if(!$tmpBool){
+                    $('.site-header').css({
+                        position:'fixed'
+                    });
+                    $tmpBool=true;
+                }
+               
+            }
+            else{
+                $('.site-header').css({
+                    position:'absolute'
+
+                });
+                $tmpBool=false;
+            }
+        
     });
   })(jQuery);

@@ -916,7 +916,7 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: absolute;
   z-index: 99;
   min-width: 100%;
   padding: 0 10rem;
@@ -937,14 +937,30 @@ object {
         -ms-flex-align: center;
             align-items: center;
     color: #248A83; }
+  .site-header button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #248a83; }
   .site-header .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    .site-header .search-form button {
-      border: none;
-      background-color: rgba(255, 255, 255, 0.85);
-      color: #248a83; }
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-header .search-form .search-field {
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      width: 0;
+      border: 0;
+      padding: 0; }
+    .site-header .search-form .search-animation {
+      width: 200px;
+      padding: 8px 15px; }
+
+.f-banner > img {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%); }
 
 .product-info {
   margin-left: auto;
@@ -1036,7 +1052,8 @@ object {
         .journal-box .journal-entries .journal-entries-container .journal-posts-container .jp-title:hover {
           color: #2f1339; }
       .journal-box .journal-entries .journal-entries-container .journal-posts-container a {
-        text-decoration: none; }
+        text-decoration: none;
+        width: 38%; }
       .journal-box .journal-entries .journal-entries-container .journal-posts-container .btn {
         color: #000000;
         border: 1px solid #000000;
@@ -1074,7 +1091,7 @@ object {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  border: 10px solid white;
+  border: 10px solid #ffffff;
   position: relative; }
 
 .adventures-container .adventure-post-pic {
@@ -1118,11 +1135,11 @@ object {
   left: 0; }
   .adventures-container .adv-title .title-grid a {
     text-decoration: none;
-    color: bisque; }
+    color: #ffffff; }
 
 .adventures-container .adv-title p {
   position: absolute;
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   padding: 5px; }
   .adventures-container .adv-title p:hover {
     background: #248a83;
@@ -1131,16 +1148,19 @@ object {
 
 .adventures-container .adv-title .read-canoe {
   -webkit-transform: translate(19px, -400px);
-          transform: translate(19px, -400px); }
+          transform: translate(19px, -400px);
+  color: #ffffff; }
 
 .adventures-container .adv-title .read-beach {
-  -webkit-transform: translate(24px, -273px);
-          transform: translate(24px, -273px); }
+  -webkit-transform: translate(24px, -240px);
+          transform: translate(24px, -240px);
+  color: #ffffff; }
 
 .adventures-container .adv-title .read-mountain,
 .adventures-container .adv-title .read-star {
   -webkit-transform: translate(10px, -92px);
-          transform: translate(10px, -92px); }
+          transform: translate(10px, -92px);
+  color: #ffffff; }
 
 .adventures-container .more-adventures {
   color: #ffffff;
@@ -1208,7 +1228,6 @@ object {
   padding-bottom: 2rem; }
 
 .shop-objects {
-  font-family: 'Merriweather', serif;
   padding-top: 5rem;
   text-align: center; }
   .shop-objects .shop-name {
@@ -1241,7 +1260,7 @@ object {
             justify-content: space-around; }
         .shop-slug-loop .type-product .entry-header .shop-price-container .entry-title a {
           text-decoration: none;
-          color: black;
+          color: #000000;
           font-weight: 100; }
 
 .single .content-area {
@@ -1401,7 +1420,7 @@ h1,
 h2,
 h3,
 p {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web','serif';
   font-size: 16px; }
 
 body {

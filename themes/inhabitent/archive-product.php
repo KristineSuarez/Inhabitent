@@ -61,10 +61,6 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 					</article><!-- #post-## -->
 
-						<!-- <php
-							get_template_part( 'template-parts/content', 'product' );
-						?> -->
-
 					<?php endwhile; ?>
 
 					<?php the_posts_navigation(); ?>
