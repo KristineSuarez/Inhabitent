@@ -3,8 +3,10 @@ let $searchBool=false;
 
 (function($) {
    
+  $(document).on('scroll', onScroll)
+  $('.search-submit').on('click', onClick) 
     
-    $('.search-submit').on('click', function(event) {
+    function onClick(event) {
       event.preventDefault();
       if (!$('.search-field').hasClass('search-animation')) {
         $('.search-field').addClass('search-animation');
@@ -17,7 +19,7 @@ let $searchBool=false;
       $('.search-field').removeClass('search-animation');
     });
 
-    $(document).on('scroll',function(){
+    function onScroll(){
         console.log($(document).scrollTop());
         
             if($(document).scrollTop()>=950){
